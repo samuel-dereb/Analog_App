@@ -1,0 +1,13 @@
+{
+    "presets": ["@babel/preset-env",  "@babel/preset-react", "@babel/preset-typescript"],
+    "plugins": [
+      ["transform-react-pug", {
+        "classAttribute": "styleName"
+      }],
+      "@babel/plugin-transform-react-jsx",
+      "transform-jsx-css-modules",
+      ["transform-jsx-classname-components", {
+        "objects": ["React"]
+      }]
+    ]
+} 
